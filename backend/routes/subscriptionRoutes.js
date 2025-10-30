@@ -31,7 +31,7 @@ router
 
 // Route to get subscription statistics (admin only)
 router.get(
-  '/stats/subscription-stats',
+  '/stats',
   authController.restrictTo('admin'),
   subscriptionController.getSubscriptionStats
 );

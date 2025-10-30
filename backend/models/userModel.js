@@ -55,6 +55,7 @@ const userSchema = new mongoose.Schema(
           enum: ['Point'],
         },
         coordinates: [Number],
+         required: [false, 'Please provide your phone number'],
         address: String,
       },
     },
